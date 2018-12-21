@@ -84,16 +84,17 @@
 
 
 
-<meta name="description" content="工作、生活、代码、android、java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MissmoBaby">
-<meta property="og:url" content="https://missmobaby.github.io/index.html">
+<meta name="description" content="如果你和我一样是小白，那么恭喜你！看到这篇文章，你也可以拥有一个这样的博客啦！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用hexo打造自己的博客">
+<meta property="og:url" content="https://missmobaby.github.io/2018/11/28/如何使用hexo打造自己的博客/index.html">
 <meta property="og:site_name" content="MissmoBaby">
-<meta property="og:description" content="工作、生活、代码、android、java">
+<meta property="og:description" content="如果你和我一样是小白，那么恭喜你！看到这篇文章，你也可以拥有一个这样的博客啦！">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-28T13:09:49.462Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MissmoBaby">
-<meta name="twitter:description" content="工作、生活、代码、android、java">
+<meta name="twitter:title" content="如何使用hexo打造自己的博客">
+<meta name="twitter:description" content="如果你和我一样是小白，那么恭喜你！看到这篇文章，你也可以拥有一个这样的博客啦！">
 
 
 
@@ -123,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://missmobaby.github.io/">
+  <link rel="canonical" href="https://missmobaby.github.io/2018/11/28/如何使用hexo打造自己的博客/">
 
 
 
 
 
-  <title>MissmoBaby - 记录工作和生活点点滴滴</title>
+  <title>如何使用hexo打造自己的博客 | MissmoBaby</title>
   
 
 
@@ -148,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/MissmoBaby"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -264,9 +264,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -296,9 +296,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/28/如何使用hexo打造自己的博客/" itemprop="url">如何使用hexo打造自己的博客</a></h2>
+          <h2 class="post-title" itemprop="name headline">如何使用hexo打造自己的博客</h2>
         
 
         <div class="post-meta">
@@ -329,6 +327,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -379,21 +382,87 @@
       
 
       
-        
-          <center>如果你和我一样是小白，那么恭喜你！看到这篇文章，你也可以拥有一个这样的博客啦！</center>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/28/如何使用hexo打造自己的博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <center>如果你和我一样是小白，那么恭喜你！看到这篇文章，你也可以拥有一个这样的博客啦！</center>
+
+<a id="more"></a>
+<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><ol>
+<li>欢迎在文末留言,或者点击加入QQ群<u>933583982</u>互相交流。</li>
+<li>本文采用<u>CC BY-NC-SA 4.0</u>许可协议，转载请注明出处！</li>
+</ol>
+<h4 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h4><h5 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h5><ol>
+<li><p><u>Node.js</u>下载，并安装，详细步骤：<a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">https://www.simon96.online/2018/11/10/hexo-env/</a></p>
+</li>
+<li><p><u>Git</u>下载，并安装，详细步骤：<a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">https://www.simon96.online/2018/11/10/hexo-env/</a></p>
+</li>
+<li><p>安装Hexo，并在命令行（即Git Brash）运行以下命令：</p>
+<blockquote>
+<p>npm install -g hexo-cli</p>
+</blockquote>
+</li>
+<li><p>初始化hexo，在命令行（即Git Brash） 依次运行以下命令即可：</p>
+<p>以下，即存放Hexo初始化文件的路径，即站点目录。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;floader&gt;</span><br><span class="line">   </span><br><span class="line">$ <span class="built_in">cd</span> &lt;floader&gt;</span><br><span class="line">   </span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>新建完成后，在路径下，会产生这些文件和文件夹：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes`</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong></p>
+<ul>
+<li><p>hexo相关命令均在<strong>站点目录</strong>下，用<strong>Git Bash</strong>运行。</p>
+</li>
+<li><p>站点配置文件：站点目录下的<code>_config.yml</code>。</p>
+<p>路径为<code>&lt;folder&gt;\config.yml</code></p>
+</li>
+<li><p>主题配置文件：站点目录下的themes文件夹下，主题文件夹下的<code>_config.yml</code>。</p>
+<p>路径为<code>&lt;folder&gt;\themes\&lt;主题文件夹&gt;\_config.yml</code></p>
+</li>
+</ul>
+<ol start="5">
+<li><p>启动服务器。在路径下，命令行（即Git Brash）输入以下命令，运行即可：</p>
+<blockquote>
+<p>hexo server</p>
+</blockquote>
+</li>
+<li><p>浏览器访问网址：<code>http://localhost:4000/</code></p>
+</li>
+</ol>
+<p>至此，您的Hexo博客已经搭建在本地。</p>
+</li>
+</ol>
+<h5 id="实施方案"><a href="#实施方案" class="headerlink" title="实施方案"></a>实施方案</h5><p>方案一：GithubPages</p>
+<ol>
+<li><p>创建<u>Github</u>账号</p>
+</li>
+<li><p>创建仓库，仓库名为：&lt;Gitbub账号名称&gt;.github.io</p>
+</li>
+<li><p>将本地Hexo博客推送到GithubPages</p>
+<p>3.1. 安装<code>hexo-deployer-git</code>插件。在命令行（即Git Bash）运行以下命令即可：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>3.2. 添加SSH key。</p>
+<ul>
+<li>创建一个 SSH key。 在命令行（即Git Bash）输入以下命令即可：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"邮箱地址"</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>添加到 github。复制秘钥文件内容（路径如：<code>C:\Users\Administrator\.ssh\id_rsa.pub</code>）粘贴到<code>New SSH Key</code>即可。</p>
+</li>
+<li><p>测试是否添加成功，在命令行（即Git Bash）依次输入以下命令，返回“You’ve successfully authenticated” 即成功：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">$ yes</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+
       
     </div>
 	
 	
 	<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
   
 </div>
 	
@@ -406,6 +475,30 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>喜欢的话可以打赏一下哟~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="MissmoBaby 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -413,344 +506,43 @@
       
 
       
-
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://missmobaby.github.io/2018/11/27/我的第一篇博客/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MissmoBaby">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MissmoBaby">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/27/我的第一篇博客/" itemprop="url">我的第一篇博客</a></h2>
+        <div class="post-widgets">
         
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-27T16:13:57+08:00">
-                2018-11-27
-              </time>
-            
+        
 
-            
-
-            
-          </span>
-
+        
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  52
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          <h4 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h4><p><em>大家好，我叫MissmoBaby,这是我的博客,以后我会经常在这里分享我的生活、工作、学习上的点点滴滴。欢迎大家！</em></p>
-<p>我的GitHub: <a href="https://github.com/MissmoBab" target="_blank" rel="noopener">GitHub</a></p>
-<p><img src="/2018/11/27/我的第一篇博客/2018-11-27-我的第一篇博客/avatar.png" alt="头像"></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/27/我的第一篇博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/27/我的第一篇博客/" rel="next" title="我的第一篇博客">
+                <i class="fa fa-chevron-left"></i> 我的第一篇博客
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-	
-	
-	<div>
-  
-</div>
-	
-	
-	
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://missmobaby.github.io/2018/11/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MissmoBaby">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MissmoBaby">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/21/hello-world/" itemprop="url">Hello World</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-21T14:26:47+08:00">
-                2018-11-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  73
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-	
-	
-	<div>
-  
-</div>
-	
-	
-	
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -760,10 +552,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -771,6 +564,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTE3MC8xNzcxOA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -791,8 +593,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -852,6 +663,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客搭建"><span class="nav-number">2.</span> <span class="nav-text">博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#准备环境"><span class="nav-number">2.1.</span> <span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实施方案"><span class="nav-number">2.2.</span> <span class="nav-text">实施方案</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1014,6 +841,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1042,6 +873,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

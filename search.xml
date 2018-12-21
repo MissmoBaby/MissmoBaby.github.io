@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何使用hexo打造自己的博客]]></title>
+    <url>%2F2018%2F11%2F28%2F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[如果你和我一样是小白，那么恭喜你！看到这篇文章，你也可以拥有一个这样的博客啦！ 前言 欢迎在文末留言,或者点击加入QQ群933583982互相交流。 本文采用CC BY-NC-SA 4.0许可协议，转载请注明出处！ 博客搭建准备环境 Node.js下载，并安装，详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ Git下载，并安装，详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 安装Hexo，并在命令行（即Git Brash）运行以下命令： npm install -g hexo-cli 初始化hexo，在命令行（即Git Brash） 依次运行以下命令即可： 以下，即存放Hexo初始化文件的路径，即站点目录。 12345$ hexo init &lt;floader&gt; $ cd &lt;floader&gt; $ npm install 新建完成后，在路径下，会产生这些文件和文件夹： 12345678.├── _config.yml├── package.json├── scaffolds├── source| ├── _drafts| └── _posts└── themes` 注： hexo相关命令均在站点目录下，用Git Bash运行。 站点配置文件：站点目录下的_config.yml。 路径为&lt;folder&gt;\config.yml 主题配置文件：站点目录下的themes文件夹下，主题文件夹下的_config.yml。 路径为&lt;folder&gt;\themes\&lt;主题文件夹&gt;\_config.yml 启动服务器。在路径下，命令行（即Git Brash）输入以下命令，运行即可： hexo server 浏览器访问网址：http://localhost:4000/ 至此，您的Hexo博客已经搭建在本地。 实施方案方案一：GithubPages 创建Github账号 创建仓库，仓库名为：&lt;Gitbub账号名称&gt;.github.io 将本地Hexo博客推送到GithubPages 3.1. 安装hexo-deployer-git插件。在命令行（即Git Bash）运行以下命令即可： 1$ npm install hexo-deployer-git --save 3.2. 添加SSH key。 创建一个 SSH key。 在命令行（即Git Bash）输入以下命令即可： 1$ ssh-keygen -t rsa -C "邮箱地址" 添加到 github。复制秘钥文件内容（路径如：C:\Users\Administrator\.ssh\id_rsa.pub）粘贴到New SSH Key即可。 测试是否添加成功，在命令行（即Git Bash）依次输入以下命令，返回“You’ve successfully authenticated” 即成功： 123$ ssh -T git@github.com$ yes]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[我的第一篇博客]]></title>
+    <url>%2F2018%2F11%2F27%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[我的第一篇博客大家好，我叫MissmoBaby,这是我的博客,以后我会经常在这里分享我的生活、工作、学习上的点点滴滴。欢迎大家！ 我的GitHub: GitHub]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F11%2F21%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
